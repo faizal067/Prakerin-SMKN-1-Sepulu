@@ -105,7 +105,7 @@
                     <a href="/tampilkan" class="button">Detail</a>
                 </div>
             </div>
-            <div class="nav">
+            {{-- <div class="nav">
                 <a href="#slide-1">1</a>
                 <a href="#slide-2">2</a>
                 <a href="#slide-3">3</a>
@@ -114,7 +114,7 @@
                 <a href="#slide-6">6</a>
                 <a href="#slide-7">7</a>
                 <a href="#slide-8">8</a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
