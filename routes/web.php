@@ -124,4 +124,5 @@ Route::middleware('guest')->group(function () {
 });
 Route::get('/', [LandingController::class, 'index1'])->name('index1');
 Route::get('/tampilkan', [DetailController::class, 'lihat'])->name('tampilkan.lihat');
+Route::get('/tampilkan/tam/{id}', [DetailController::class, 'detail'])->name('tampilkan.tam');
 

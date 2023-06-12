@@ -1,41 +1,30 @@
-@extends('layouts.home')
-
+@extends('layouts.landing')
 @section('content')
 <div class="container">
-    <a href="/home/daftar/create" class="btn btn-success margin-buttom="50px>Tambah ></a>
     <div class="col-md-15">
       <div class="card shadow-sm mb-1">
         <div class="row">
           <div class="card-body">
             <div class="card-header">
-              Data Diri Siswa Prakerin
+              Data Lokasi Prakerin
             </div>
             @foreach($data as $index => $row)
               <ul>
-                  <li>User ID : {{$row->user->id}}</li>
-                  <li>Nama : {{$row->nama}}</li>
-                  <li>Kelas : {{$row->kelas}}</li>
-                  <li>Jurusan : {{$row->jurusan}}</li>
-                  <li>Alamat : {{$row->alamat}}</li>
-                  <li>Jenis Kelamin : {{$row->jeniskelamin}}</li>
-                  <li>Agama : {{$row->agama}}</li>
-                  <li>Kelompok : {{$row->kelompok}}</li>
-                  <li>Industri : {{$row->industri}}</li>
-                  <li>No. Telepon : {{$row->notelp}}</li>
-                  <li>Foto Formal : <img src="{{asset('fotodaftar/'.$row->foto)}}" alt="" style="width: 48px"></li>
-                  <li>Keahlian :   {{$row->keahlian}}</li>
-                  <li>Status :   <label class="label {{($row->is_accepted == 1) ? 'label-success' : 'label-danger'}}">
-                    {{($row->is_accepted == 1) ? 'Disetujui' : 'Tidak disetujui' }}</label></li>
+                  <li>Nama Industri : {{$row->nama}}</li>
+                  <li>Jurusan : {{$row->deskripsi}}</li>
+                  <li>Alamat : {{$row->kebutuhan}}</li>
+                  <li>Lokasi : <br>
+                    <iframe src="https://www.google.com/maps/embed?pb={{$row->lokasi}}" width="300" height="200" style="border:0;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
               </ul>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                  <a href="/tampilkan" class="btn btn-primary" role="button">Back</a>
               </div>
           </div>
-            {{ $data->links() }} 
+            {{ $data->links() }}
           </div>
           @endforeach
       </div>
     </div>
 </div>
-  </div>
 @endsection

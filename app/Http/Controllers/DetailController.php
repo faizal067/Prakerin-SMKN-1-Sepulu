@@ -21,7 +21,7 @@ class DetailController extends Controller
     }
     public function detail(Request $request){
         if ($request->has('search')) {
-            $data = Industri::where('lokasi','LIKE','%' .$request->search.'%')->paginate(5);
+            $data = Industri::where('id','LIKE','%' .$request->search.'%')->paginate(5);
             // $data = Industri::where('user_id','LIKE','13')->paginate(5);
         }else {
             $data = Industri::where('id','LIKE',$request->id)->paginate(5);
