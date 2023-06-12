@@ -30,7 +30,6 @@ body {
     padding: 20px 0 20px 0;
     position: fixed;
     width: 100%;
-    z-index: 100;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
