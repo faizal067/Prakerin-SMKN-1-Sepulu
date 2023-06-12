@@ -49,7 +49,7 @@
 
         </div>
         <div class="info">
-            {{-- <img src="{{asset('fotodaftar/'.$row->foto)}}" alt="" style="width: 10px"> --}}
+            <img src="{{asset('fotodaftar/'.$row->foto)}}" alt="" style="width: 10px">
             <h1> ID Card Peserta Magang</h1>
             <h3>Nama        : {{$row->nama}}</h3>
             <h3>Kelas       : {{$row->kelas}}</h3>

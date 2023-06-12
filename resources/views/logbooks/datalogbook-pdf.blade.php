@@ -37,7 +37,7 @@
     <th>Kegiatan</th>
     <th>Rincian Kegiatan</th>
     <th>Status</th>
-    <!-- <th>Foto Kegiatan</th> -->
+    <th>Foto Kegiatan</th>
   </tr>
   @php
   $no=1;
@@ -52,9 +52,9 @@
         <label class="label {{($row->is_accepted == 1) ? 'label-success' : 'label-danger'}}">
           {{($row->is_accepted == 1) ? 'Disetujui' : 'Tidak disetujui' }}</label>
     </td>
-    <!-- <td>
+    <td>
         <img src="{{asset('fotokegiatan/'.$row->foto)}}" alt="" style="width: 48px">
-    </td> -->
+    </td>
   </tr>
   @endforeach
 </table>

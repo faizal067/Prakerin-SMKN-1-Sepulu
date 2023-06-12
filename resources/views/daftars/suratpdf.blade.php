@@ -24,7 +24,7 @@
         <table >
             <tr>
                 <td>
-                    {{-- <img src="{{asset('page/img/smkn_1_sepulu1.png')}}" alt="" width="100px"> --}}
+                    <img src="{{asset('page/img/smkn_1_sepulu1.png')}}" alt="" width="100px">
                 </td>
                 <td>
                     <center>
