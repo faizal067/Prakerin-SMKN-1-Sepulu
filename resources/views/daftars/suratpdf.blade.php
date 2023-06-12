@@ -23,9 +23,9 @@
     <center>
         <table >
             <tr>
-                <td>
+                {{-- <td>
                     <img src="{{asset('page/img/smkn_1_sepulu1.png')}}" alt="" width="100px">
-                </td>
+                </td> --}}
                 <td>
                     <center>
                         <font size="3">PEMERINTAH PROVINSI JAWA TIMUR <br> DINAS PENDIDIKAN </font><br>
