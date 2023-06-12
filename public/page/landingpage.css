@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/smk.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 0 0 200px 0;
+
+}
+
+body {
+    background-color: rgb(80, 83, 255);
+}
+
+.container {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.navbar {
+    background-color: rgb(3, 3, 3);
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.navbar.scrolling-active{
+    background-color: blue;
+    padding: auto;
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .box-navbar .logo h1 {
+    margin-right: 50px;
+    color: white;
+    font-size: 18px;
+}
+
+.navbar .box-navbar .menu {
+    display: flex;
+    column-gap: 10px;
+}
+
+.navbar .box-navbar .menu li {
+    list-style-type: none;
+}
+
+.navbar .box-navbar .menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.navbar .box-navbar .menu .active a {
+    background-color: rgb(255, 255, 0);
+    border-radius: 15px;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar .box-navbar .menu .active a:hover {
+    background-color: rgba(129, 129, 0, 0.8);
+    border-radius: 15px;
+}
+
+.navbar .box-navbar .menu li a:hover {
+    background-color: rgb(0, 0, 255);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.menu-bar {
+    color: white;
+    font-size: 20px;
+    display: none;
+    z-index: 100;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.hero .box-hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    columns: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .box-hero .box:nth-child(1) h1 {
+    color: white;
+    font-size: 2vw;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.hero .box-hero .box:nth-child(1) p {
+    line-height: 2;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 100;
+}
+
+.hero .box-hero .box:nth-child(1) button {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(65, 65, 255);
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hero .box-hero .box:nth-child(1) button:hover {
+    background-color: rgb(2, 2, 105);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.hero .box-hero .box:nth-child(2) img {
+    width: 100%;
+}
+
+.services {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 50px 0;
+}
+
+.services .box-services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 50px;
+}
+h2 {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.services .box-services .box {
+    width: 200px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.services .box-services .box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services .box-services .box p {
+    font-weight: 200px;
+}
+
+.pantai {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("img/WhatsApp\ Image\ 2022-08-13\ at\ 11.58.50\ \(1\).jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 200px 0 200px 0;
+}
+.pantai h2{
+    margin-top: -20px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+.pantai .slide{
+    width: 77%;
+    height: 70vh;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.balik,
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.pantai .card{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    transition: 5s;
+}
+.balik::before{
+    background-color: rgb(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    z-index: 10;
+}
+.pantai .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pantai .tulis{
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    width: 100%;
+    z-index: 50;
+}
+.pantai .tulis h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.pantai .tulis a{
+    font-size: 15px;
+}
+a.button{
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px 8px;
+    color: white;
+    background-color: orangered;
+    text-decoration: none;
+}
+.tulis a:hover{
+    background-color: rgb(0, 0, 0, 0.3);
+    transition: 1s;
+}
+#slide-1:target ~ .card{
+    margin-left: 0px;
+}
+#slide-2:target ~ .card{
+    margin-left: -100%;
+}
+#slide-3:target ~ .card{
+    margin-left: -200%;
+}
+#slide-4:target ~ .card{
+    margin-left: -300%;
+}
+#slide-5:target ~ .card{
+    margin-left: -400%;
+}
+#slide-6:target ~ .card{
+    margin-left: -500%;
+}
+#slide-7:target ~ .card{
+    margin-left: -600%;
+}
+#slide-8:target ~ .card{
+    margin-left: -700%;
+}
+.nav{
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+.nav a{
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: #bdbdbd;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+}
+.nav a:hover{
+    background-color: rgb(95, 167, 249);
+    transition: 1s;
+    animation-name: change;
+    animation-duration: 2s;
+}
+@keyframes change{
+    from{background-color: #bdbdbd;}
+    to{background-color: rgb(95, 167, 249);}
+}
+.daftar{
+    padding: 50px 0 50px 0;
+}
+.daftar .box-daftar {
+    color: white;
+    text-align: center;
+}
+.daftar .box-daftar h1{
+    margin-bottom: 50px;
+}
+.daftar .box-daftar h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+    animation: animasi 2s infinite;
+}
+@keyframes animasi{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.daftar .box-daftar a{
+    border: none;
+    width: 100px;
+    height: 200px;
+    cursor: pointer;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    border-radius: 100px;
+    padding: 10px;
+}
+.daftar .box-daftar button:hover {
+    background-color: rgb(0, 0, 92);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.footer{
+    padding: 50px 0 50px 0;
+    background-color: black;
+}
+.footer .box-footer{
+    display: grid;
+    grid-template-columns: 2fr auto 1fr 1fr;
+    column-gap: 100px;
+    align-items: center;
+}
+.footer .box-footer .box{
+    color: white;
+}
+.footer .box-footer .box:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.footer .box-footer .box:nth-child(2) a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+}
+.footer .box-footer .box p{
+    font-weight: 200;
+}
+.footer .box-footer .box:nth-child(1) p{
+    font-size: 12px ;
+    line-height: 2;
+    margin-top: 10px;
+}
+.footer .box-footer .box:nth-child(4) {
+    text-align: center;
+}
+.footer .box-footer .box:nth-child(4) span {
+    font-weight: bold;
+}
+@media screen and (max-width: 1200px) {
+    .hero .box-hero .box:nth-child(1) button {
+        width:  150px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .daftar .box-daftar button{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .menu-bar {
+        display: block;
+        z-index: 100;
+    }
+
+    .navbar .box-navbar .menu {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        height: 280px;
+        row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        top: 40px;
+        right: 50%;
+        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+        -moz-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        -o-transform: translateX(50%);
+        opacity: 0;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        background-color: rgb(0, 105, 105);
+    }
+
+    .navbar .box-navbar .menu.menu-active {
+        top: 80px;
+        opacity: 1;
+        border-top: 1px solid white;
+    }
+
+    .hero .box-hero .box:nth-child(1) p {
+        font-size: 14px;
+    }
+    .daftar .box-daftar h1{
+        font-size: 28px;
+    }
+    .footer .box-footer{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero .box-hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 10px;
+    }
+
+    .hero .box-hero .box:nth-child(1) {
+        order: 2;
+        text-align: center;
+    }
+
+    .hero .box-hero .box:nth-child(2) {
+        order: 1;
+        text-align: center;
+    }
+
+    .hero .box-hero .box:nth-child(2) img {
+        width: 55vw;
+    }
+}
+
+@media screen and(max-width: 575px) {
+    .hero .box-hero .box:nth-child(1) h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .hero .box-hero .box:nth-child(2) {
+        width: 55vw;
+        align-self: flex-end;
+        justify-self: center;
+    }
+    .pantai .box-pantai{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

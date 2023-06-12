@@ -1,0 +1,48 @@
+@extends('layouts.app')
+
+@section('content')
+<div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h6 class="fs-6 fw-light">Data User</h6>
+                    <h4 class="fw-bold">{{ $positionCount }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h6 class="fs-6 fw-light">Data Siswa</h6>
+                    <h4 class="fw-bold">{{ $userCount }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h6 class="fs-6 fw-light">Data Laporan</h6>
+                    <h4 class="fw-bold">{{ $logbookCount }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h6 class="fs-6 fw-light">Data Industri</h6>
+                    <h4 class="fw-bold">{{ $industriCount }}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h6 class="fs-6 fw-light">Data Siswa Prakerin</h6>
+                    <h4 class="fw-bold">{{ $daftarCount }}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
