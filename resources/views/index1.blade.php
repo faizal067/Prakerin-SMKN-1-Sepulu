@@ -44,7 +44,7 @@
                 <h1>Prakerin <br>SMKN 1 Sepulu <br>Memupuk Karakter Industri</h1>
                 <p>Prakerin ini diharapkan dapat memupuk karakter siswa agar
                 dapat berinteraksi dengan dunia kerja</p>
-                <button>Review</button>
+                <a href="/review" class="button">Review</a>
                 </div>
                 <div class="box">
                     <img src="{{asset('page/img/siswa.png')}}" alt="">

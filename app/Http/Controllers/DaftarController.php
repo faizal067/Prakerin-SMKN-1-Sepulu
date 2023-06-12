@@ -55,7 +55,7 @@ class DaftarController extends Controller
     public function edit($id){
         $data = Daftar::find($id);
         // dd($data);
-        return view('/home/rubah/edit', compact('data'), [
+        return view('/home/daftar/edit', compact('data'), [
             "title" => "Edit Data Pendaftaran"
         ]);
     }

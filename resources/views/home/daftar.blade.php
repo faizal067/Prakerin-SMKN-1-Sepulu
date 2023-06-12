@@ -12,6 +12,7 @@
             </div>
             @foreach($data as $index => $row)
               <ul>
+                  <li>ID : {{$index + $data->firstItem()}}</li>
                   <li>User ID : {{$row->user->id}}</li>
                   <li>Nama : {{$row->nama}}</li>
                   <li>Kelas : {{$row->kelas}}</li>
@@ -28,10 +29,10 @@
                     {{($row->is_accepted == 1) ? 'Disetujui' : 'Tidak disetujui' }}</label></li>
               </ul>
               <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Edit</button>
+                <a href="/deletedaftar/{{$row->id}}" class="btn btn-danger">Hapus</a>
               </div>
           </div>
-            {{ $data->links() }} 
+            {{ $data->links() }}
           </div>
           @endforeach
       </div>

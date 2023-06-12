@@ -19,6 +19,9 @@ class DetailController extends Controller
             "title" => "Data Siswa Pendaftar Prakerin"
         ]);
     }
+    public function review(){
+        return view('review');
+    }
     public function detail(Request $request){
         if ($request->has('search')) {
             $data = Industri::where('id','LIKE','%' .$request->search.'%')->paginate(5);
