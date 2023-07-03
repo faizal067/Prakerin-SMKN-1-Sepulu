@@ -12,6 +12,7 @@ class DaftarAdminController extends Controller
     public function index(Request $request){
         if ($request->has('search')) {
             $data = Daftar::where('kelompok','LIKE','%' .$request->search.'%')->paginate(5);
+            $data = Daftar::where('nama','LIKE','%' .$request->search.'%')->paginate(5);
             // $data = Daftar::where('user_id','LIKE','13')->paginate(5);
         }else {
             // $data = Daftar::where('user_id','LIKE',auth()->user()->id)->paginate(5);
@@ -26,7 +27,7 @@ class DaftarAdminController extends Controller
             $data = Daftar::where('kelompok','LIKE','%' .$request->search.'%')->paginate(5);
             // $data = Daftar::where('user_id','LIKE','13')->paginate(5);
         }else {
-            $data = Daftar::where('id','LIKE',$request->id)->paginate(5);
+            $data = Daftar::where('id','LIKE','%'.$request->id.'%')->paginate(5);
             // $data = Daftar::paginate(5);
         }
         return view('daftars.tampil', compact('data'), [
@@ -42,10 +43,10 @@ class DaftarAdminController extends Controller
     }
     public function suratpdf(Request $request){
         if ($request->has('search')) {
-            $data = Daftar::where('kelompok','LIKE','%' .$request->search.'%')->paginate(5);
+            $data = Daftar::where('nama','LIKE','%' .$request->search.'%')->paginate(5);
             // $data = Daftar::where('user_id','LIKE','13')->paginate(5);
         }else {
-            $data = Daftar::where('kelompok','LIKE','%' .$request->kelompok.'%')->paginate(5);
+            $data = Daftar::where('kelompok','LIKE', $request->kelompok)->paginate(5);
             // $data = Daftar::paginate(5);
         }
 

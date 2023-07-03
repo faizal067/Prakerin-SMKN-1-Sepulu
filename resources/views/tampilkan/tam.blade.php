@@ -12,7 +12,7 @@
               <ul>
                   <li>Nama Industri : {{$row->nama}}</li>
                   <li>Jurusan : {{$row->deskripsi}}</li>
-                  <li>Alamat : {{$row->kebutuhan}}</li>
+                  <li>Kebutuhan : {{$row->kebutuhan}}</li>
                   <li>Lokasi : <br>
                     <iframe src="https://www.google.com/maps/embed?pb={{$row->lokasi}}" width="300" height="200" style="border:0;"
                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>

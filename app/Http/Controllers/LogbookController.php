@@ -26,7 +26,7 @@ class LogbookController extends Controller
             $data = Logbook::where('id','LIKE','%' .$request->search.'%')->paginate(5);
             // $data = Logbook::where('user_id','LIKE','13')->paginate(5);
         }else {
-            $data = Logbook::where('id','LIKE',$request->id)->paginate(5);
+            $data = Logbook::where('id','LIKE','%'.$request->id.'%')->paginate(5);
             // $data = Logbook::paginate(5);
         }
         return view('logbooks.tampil', compact('data'), [
