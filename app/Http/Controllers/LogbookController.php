@@ -11,7 +11,7 @@ class LogbookController extends Controller
 {
     public function index(Request $request){
         if ($request->has('search')) {
-            $data = Logbook::where('tglkegiatan','LIKE','%' .$request->search.'%')->paginate(5);
+            $data = Logbook::where('tglkegiatan','LIKE','%' .$request->search.'%')->simplePaginate(5);
             // $data = Logbook::where('user_id','LIKE','13')->paginate(5);
         }else {
             // $data = Logbook::where('user_id','LIKE',auth()->user()->id)->paginate(5);

@@ -11,8 +11,8 @@ class DaftarAdminController extends Controller
 {
     public function index(Request $request){
         if ($request->has('search')) {
-            $data = Daftar::where('kelompok','LIKE','%' .$request->search.'%')->paginate(5);
-            $data = Daftar::where('nama','LIKE','%' .$request->search.'%')->paginate(5);
+            $data = Daftar::where('kelompok','LIKE','%' .$request->search.'%')->simplePaginate(5);
+            $data = Daftar::where('nama','LIKE','%' .$request->search.'%')->simplePaginate(5);
             // $data = Daftar::where('user_id','LIKE','13')->paginate(5);
         }else {
             // $data = Daftar::where('user_id','LIKE',auth()->user()->id)->paginate(5);
