@@ -95,7 +95,7 @@
                 <input type="text" name="keahlian" class="form-control" id="exampleInputPassword1">
               </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button href="/" class="btn btn-primary">Cencel</button>
+            <a href="/home/daftar" class="btn btn-primary">Cencel</a>
           </form>
         </div>
       </div>
