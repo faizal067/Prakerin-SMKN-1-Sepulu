@@ -33,6 +33,7 @@
 <table id="customers">
   <tr>
     <th>No</th>
+    <th>Nama Siswa</th>
     <th>Tanggal Kegiatan</th>
     <th>Kegiatan</th>
     <th>Rincian Kegiatan</th>
@@ -45,6 +46,7 @@
   @foreach ($data as $row)
   <tr>
     <td>{{$no++}}</td>
+    <td>{{$row->user->name}}</td>
     <td>{{$row->tglkegiatan}}</td>
     <td>{{$row->kegiatan}}</td>
     <td>{{$row->rincian}}</td>
